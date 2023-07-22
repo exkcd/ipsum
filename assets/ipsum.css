@@ -1,0 +1,145 @@
+/** 
+* Table of contents
+*
+* Global resets
+* Basic formatting
+* Headings
+* Body text
+* Container
+* Archive
+* Posts
+* Masthead
+*
+*/
+
+:root {
+  --gutter: 1.5rem;
+  --body-font: serif;
+  --body-bg: #fafafa;
+  --body-color: #444;
+  --secondary-color: #7a7a7a;
+  --heading-color: #333;
+  --link-color: #222;
+  --hr-color: #ddd;
+  --link-color-hover: var(--secondary-color);
+}
+
+/** Global resets */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/** Basic formatting */
+
+html {
+  font-family: var(--body-font);
+  font-size: 1.2em;
+}
+
+body {
+  padding: var(--gutter);
+  margin: 0;
+  line-height: 1.6;
+  color: var(--body-color);
+  background-color: var(--body-bg);
+}
+
+/** Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: var(--heading-color);
+  margin: 0;
+}
+
+/** Body text */
+
+p {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p a {
+  opacity: 50%;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-color-hover);
+}
+
+/** Container  */
+
+.container {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/** Archive */
+
+.archive {
+  margin-bottom: 3rem;
+}
+
+.archive-item {
+  margin-bottom: 2rem;
+  overflow: auto;
+}
+
+.archive-date {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+/** Posts */
+
+.post {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.post-title {
+  display: block;
+  color: var(--heading-color);
+}
+
+.post-date {
+  display: block;
+  color: var(--secondary-color);
+  margin-bottom: var(--gutter);
+}
+
+/** Masthead */
+
+.masthead {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  border-bottom: 0.125rem solid var(--hr-color);
+}
+
+.masthead-title {
+  margin-bottom: 0.5rem;
+}
+
+small {
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.nav {
+  float: right;
+}

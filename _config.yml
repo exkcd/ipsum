@@ -1,0 +1,17 @@
+title: Ipsum
+baseurl: "/ipsum"
+url: "https://exkcd.github.io/ipsum"
+
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+
+nav:
+  - title: About
+    url: /ipsum/about
